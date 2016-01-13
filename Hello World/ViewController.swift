@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    //modif 1
+    @IBOutlet var miEtiqueta: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +22,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func ejecutaMetodo(sender: AnyObject) {
+    
+        miEtiqueta.text = "Hola mundo"
+    }
 
 }
 
