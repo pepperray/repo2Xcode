@@ -11,7 +11,6 @@
 		ED1CD3621C3ADC8F0054CFAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CD3611C3ADC8F0054CFAC /* ViewController.swift */; };
 		ED1CD3651C3ADC8F0054CFAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1CD3631C3ADC8F0054CFAC /* Main.storyboard */; };
 		ED1CD3671C3ADC8F0054CFAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1CD3661C3ADC8F0054CFAC /* Assets.xcassets */; };
-		ED1CD36A1C3ADC8F0054CFAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1CD3681C3ADC8F0054CFAC /* LaunchScreen.storyboard */; };
 		ED1CD3751C3ADC8F0054CFAC /* Hello_WorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CD3741C3ADC8F0054CFAC /* Hello_WorldTests.swift */; };
 		ED1CD3801C3ADC8F0054CFAC /* Hello_WorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CD37F1C3ADC8F0054CFAC /* Hello_WorldUITests.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +38,6 @@
 		ED1CD3611C3ADC8F0054CFAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED1CD3641C3ADC8F0054CFAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED1CD3661C3ADC8F0054CFAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ED1CD3691C3ADC8F0054CFAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED1CD36B1C3ADC8F0054CFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED1CD3701C3ADC8F0054CFAC /* Hello WorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello WorldTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1CD3741C3ADC8F0054CFAC /* Hello_WorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_WorldTests.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				ED1CD3611C3ADC8F0054CFAC /* ViewController.swift */,
 				ED1CD3631C3ADC8F0054CFAC /* Main.storyboard */,
 				ED1CD3661C3ADC8F0054CFAC /* Assets.xcassets */,
-				ED1CD3681C3ADC8F0054CFAC /* LaunchScreen.storyboard */,
 				ED1CD36B1C3ADC8F0054CFAC /* Info.plist */,
 			);
 			path = "Hello World";
@@ -193,6 +190,7 @@
 				TargetAttributes = {
 					ED1CD35B1C3ADC8F0054CFAC = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 43HS2438LC;
 					};
 					ED1CD36F1C3ADC8F0054CFAC = {
 						CreatedOnToolsVersion = 7.2;
@@ -229,7 +227,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED1CD36A1C3ADC8F0054CFAC /* LaunchScreen.storyboard in Resources */,
 				ED1CD3671C3ADC8F0054CFAC /* Assets.xcassets in Resources */,
 				ED1CD3651C3ADC8F0054CFAC /* Main.storyboard in Resources */,
 			);
@@ -299,14 +296,6 @@
 				ED1CD3641C3ADC8F0054CFAC /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		ED1CD3681C3ADC8F0054CFAC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ED1CD3691C3ADC8F0054CFAC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -397,10 +386,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Hello World/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "caepccm.Hello-World";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -408,10 +400,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Hello World/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "caepccm.Hello-World";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +477,7 @@
 				ED1CD3861C3ADC8F0054CFAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED1CD3871C3ADC8F0054CFAC /* Build configuration list for PBXNativeTarget "Hello WorldTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +486,7 @@
 				ED1CD3891C3ADC8F0054CFAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED1CD38A1C3ADC900054CFAC /* Build configuration list for PBXNativeTarget "Hello WorldUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +495,7 @@
 				ED1CD38C1C3ADC900054CFAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
